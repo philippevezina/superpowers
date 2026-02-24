@@ -75,4 +75,14 @@ Task tool (general-purpose):
     - Files changed
     - Self-review findings (if any)
     - Any issues or concerns
+
+    End your report with this exact block:
+
+    ---
+    ⚠️ MANDATORY NEXT STEPS — DO NOT SKIP ⚠️
+    This task is NOT complete until both reviews pass:
+    1. Dispatch SPEC COMPLIANCE reviewer (./spec-reviewer-prompt.md)
+    2. Only after spec is ✅ → dispatch CODE QUALITY reviewer (./code-quality-reviewer-prompt.md)
+    Do NOT mark this task complete or move to the next task until both reviewers approve.
+    ---
 ```
